@@ -1,10 +1,27 @@
+<p align="center"><img src="docs/banner.png" alt="MCP Security Checklist: 31 testable yes/no items" width="100%"></p>
+
 # MCP Security Checklist
+
+[![License: MIT](https://img.shields.io/badge/license-MIT-yellow.svg)](LICENSE) [![Items](https://img.shields.io/badge/checklist_items-31-blue.svg)](CHECKLIST.md) [![Last verified](https://img.shields.io/badge/last_verified-2026--11--17-brightgreen.svg)](#what-was-not-verified) [![MCP_spec](https://img.shields.io/badge/MCP_spec-2026--07--28-informational.svg)](#verified-references) [![checks](https://github.com/sunilgentyala/mcp-security-checklist/actions/workflows/checks.yml/badge.svg)](https://github.com/sunilgentyala/mcp-security-checklist/actions/workflows/checks.yml)
 
 A testable yes/no checklist for reviewing a Model Context Protocol (MCP) server or client before you connect an agent to it. Every item names a quick test and the source it rests on. Items that go beyond the MCP specification are labelled as such.
 
 Use it as a pull-request gate, a pre-install review, or a security-review template.
 
 > Last verified: 2026-11-17 against MCP specification version **2026-07-28** (the current version per the [MCP versioning page](https://modelcontextprotocol.io/specification/versioning)). This is a review aid, not a standard. See [What was not verified](#what-was-not-verified).
+
+## Contents
+
+- [1. Tool descriptions and metadata (tool poisoning)](#1-tool-descriptions-and-metadata-tool-poisoning) (4 items)
+- [2. Tool changes after approval (rug pull)](#2-tool-changes-after-approval-rug-pull) (5 items)
+- [3. Authentication and authorization](#3-authentication-and-authorization) (8 items)
+- [4. Client-side execution safety](#4-client-side-execution-safety) (4 items)
+- [5. Server-side tool safety](#5-server-side-tool-safety) (5 items)
+- [6. Supply chain and logging](#6-supply-chain-and-logging) (5 items)
+- [Scoring](#scoring)
+- [Verified references](#verified-references)
+- [What was not verified](#what-was-not-verified)
+- [Related checklists](#related-checklists)
 
 ## How to use it
 
