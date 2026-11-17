@@ -8,6 +8,8 @@ Use it as a pull-request gate, a pre-install review, or a security-review templa
 
 ## How to use it
 
+Want only the tick boxes? Copy [CHECKLIST.md](CHECKLIST.md).
+
 1. Copy the checklist into an issue or PR description.
 2. Tick an item only after you ran its test, not after you read the docs.
 3. Sections 1 to 3 are blockers. Sections 4 to 6 are hardening.
@@ -117,7 +119,7 @@ CVSS scores differ by scorer (CNA versus NVD). The scorer is named wherever a sc
 - ATLAS tactics for each technique and the atlas.mitre.org pages. The IDs and names come from the data file.
 - Server prevalence statistics. Several widely repeated figures could not be traced to a primary source, so none are used here.
 
-Found a wrong or untestable item? Open an issue or pull request. Each item must be a yes/no question with a test, and each new claim needs a primary source.
+Found a wrong or untestable item? Use the issue forms or open a pull request (a template guides you). Each item must be a yes/no question with a test, and each new claim needs a primary source.
 
 ## Related checklists
 
