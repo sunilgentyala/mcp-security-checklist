@@ -63,6 +63,8 @@ ATLAS: `AML.T0109` AI Supply Chain Rug Pull.
 - [ ] **2.4** Server versions are pinned. No `latest`, no floating tags. *Test:* grep your config for unpinned package specs. *Basis:* Invariant Labs (beyond spec).
 - [ ] **2.5** The tool set does not change per connection or as a side effect of other requests. *Test:* call `tools/list` on two connections with the same credentials and diff the results. *Basis:* Spec MUST, [Tools](https://modelcontextprotocol.io/specification/latest/server/tools). The set MAY vary by the authorization presented.
 
+**What the hash does not cover.** Items 2.1 and 2.2 catch changes to the definition (name, description, schema). They cannot catch behavioral drift: a server can keep an identical definition and change what the tool does on the back end. Likewise, a `notifications/tools/list_changed` re-check only helps if the client re-hashes and asks for approval again, not if it just refreshes the displayed list. Pair the hash check with: (a) a client-side allowlist that enables only the tools the task needs, (b) per-call approval for anything that writes, executes, or spends, (c) a sandbox with an egress allowlist and scoped, short-lived credentials, and (d) call logging so drift can be spotted afterwards. Credit: raised by a reader comment on the dev.to post.
+
 ## 3. Authentication and authorization
 
 Authorization is OPTIONAL in the MCP specification. Items 3.1 to 3.7 apply when the server uses HTTP authorization. Source for most: [MCP Authorization](https://modelcontextprotocol.io/specification/latest/basic/authorization).

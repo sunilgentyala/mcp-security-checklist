@@ -18,6 +18,8 @@ Copy this into a pull request or review ticket. Tick an item only after you ran 
 - [ ] **2.4** Server versions are pinned. No `latest`, no floating tags.
 - [ ] **2.5** The tool set does not change per connection or as a side effect of other requests.
 
+Note: a hash catches definition changes, not behavioral drift. Pair it with a tool allowlist, per-call approval for write, execute and spend tools, a sandbox with egress limits, and call logging. Detail in README section 2.
+
 ## 3. Authentication and authorization
 
 - [ ] **3.1** The server publishes RFC 9728 Protected Resource Metadata.
