@@ -6,6 +6,14 @@ Use it as a pull-request gate, a pre-install review, or a security-review templa
 
 > Scope: this is a practical review aid, not a standard. Items marked with a MITRE ATLAS ID map to techniques in the ATLAS knowledge base (data v5.6.0 at time of writing).
 
+## How this differs from other checklists
+
+Other MCP checklists exist and are worth reading, for example [SlowMist's MCP Security Checklist](https://github.com/slowmist/MCP-Security-Checklist). This one is built as a review gate:
+
+- Every item is a yes/no question with a way to test it.
+- Sections 1 to 3 are blockers and 4 to 6 are hardening, so you get a pass/fail result.
+- Items map to MITRE ATLAS technique IDs where one exists.
+
 ## How to use it
 
 1. Copy the checklist below into an issue or PR description.
